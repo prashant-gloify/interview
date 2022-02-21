@@ -6,11 +6,23 @@ import About from './container/About';
 import Contact from './container/Contact';
 import Login from './container/Login';
 import Navbar from './components/Navbar';
+import QuestionContainer from './components/QuestionContainer';
+import { Box } from '@chakra-ui/react';
+import TankYou from './components/ThankYou';
 
 function App() {
   return (
     <main>
       <Navbar />
+      {/* <Box p={4}>
+        <QuestionContainer 
+          question="What is react ?" 
+          questionNumber='1'
+          timeRemaining='2:00'
+        >
+        </QuestionContainer>
+      </Box> */}
+      
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<About />} />
